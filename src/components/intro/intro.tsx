@@ -3,6 +3,7 @@ import React from 'react'
 const Intro = () => {
     return (
         <div>
+            React
             <h1>React Testing:</h1>
             <ul>
                 <li>
@@ -96,6 +97,39 @@ const Intro = () => {
                 <li>Think of this is a triangle with bottom having unit test, in mid it has integrated and at top it has e2e test</li>
                 <li>Going up means your tests area gets larger but at the same time the number of tests gets smaller</li>
             </ul>
+
+
+            <h4>Anotomy of Test:</h4>
+            <ul>
+                <li>test(name, fn, timeout)</li>
+                <li>Timeout is optional, how long to wait before aborting the test. default time is 5s</li>
+            </ul>
+
+
+
+            <h4>Test Driven Development (TDD):</h4>
+            <ul>
+                <li>Software development process, where you can write test before writing the code</li>
+                <li>Once test is done, you can write your code for that test</li>
+                <ol>
+                    <li>Create tests that verify the functionality of a specific feature.</li>
+                    <li>Write code that will run test successfully when re-executed.</li>
+                    <li>Refactor the code for optimization while ensuring the test continue to pass</li>
+                    <li>Also called <span className='color-yellow'>Red Green Testing</span></li>
+                </ol>
+            </ul>
+
+
+
+            <h4>Jest Watch Mode:</h4>
+            <ul>
+                <li>Option that can pass to jest asking to watch files that have changed since the last commit and execute test that are related to that files.</li>
+                <li>An optimization to run test fast regardless of how many tests you have</li>
+            </ul>
+
+
+
+
         </div>
     )
 }
